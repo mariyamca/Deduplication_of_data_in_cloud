@@ -1,0 +1,60 @@
+Search Rank Fraud and Malware Detection in Google Play
+
+Abstract
+Fraudulent behaviors in Google Play, the most popular Android app market, fuel search rank abuse and malware proliferation. To identify malware, previous work has focused on app executable and permission analysis. In this paper, we introduce FairPlay, a novel system that discovers and leverages traces left behind by fraudsters, to detect both malware and apps subjected to search rank fraud. FairPlay correlates review activities and uniquely combines detected review relations with linguistic and behavioral signals gleaned from Google Play app data (87K apps, 2.9M reviews, and 2.4M reviewers, collected over half a year), in order to identify suspicious apps. FairPlay achieves over 95% accuracy in classifying gold standard datasets of malware, fraudulent and legitimate apps. We show that 75% of the identified malware apps engage in search rank fraud. FairPlay discovers hundreds of fraudulent apps that currently evade Google Bouncer’s detection technology. FairPlay also helped the discovery of more than 1,000 reviews, reported for 193 apps, that reveal a new type of “coercive” review campaign: users are harassed into writing positive reviews, and install and review other apps.
+
+Admin
+
+* View App Developers & Authorize
+
+* View Users & Authorize
+
+* Add Review Filters
+
+* View All Mobile Manuals
+
+* View All Uploaded Apps with Rank & Rating Details
+
+* View All Apps With Review,Co Review and Recommend Details
+
+* View Symmetric Key Requests
+
+* All Malware Deatails For Mobiles
+
+* View All Search Rank Fraud User
+
+* All Application Positive Behaviour
+
+* All Application Negative Behaviour
+
+* View All Application Hits In Charts
+
+* View All Application Download In Charts 
+
+* View All Application Rating In Charts 
+
+* View Number Of time Application Fraud In Charts
+
+Developer
+
+* View Profile
+
+* Add Mobile & Os
+
+* Add Mobile Booklet
+
+* Add Application Details
+
+* View All Applications
+
+user
+
+* Profile
+
+* Mobile Apps
+
+* Symmetric Key
+
+* Mobile Manuals
+
+* Recommendation

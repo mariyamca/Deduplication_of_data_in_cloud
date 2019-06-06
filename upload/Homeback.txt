@@ -1,0 +1,17 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Mainpage/home.master" AutoEventWireup="true" CodeFile="Home.aspx.cs" Inherits="Mainpage_Home" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <script src="../MainpageTemp/js/jquery-2.2.3.min.js"></script>
+
+    <script type="text/javascript" >
+$(document).ready(function() {
+    window.history.pushState(null, "", window.location.href);        
+    window.onpopstate = function() {
+        window.history.pushState(null, "", window.location.href);
+    };
+});
+</script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+</asp:Content>
+
