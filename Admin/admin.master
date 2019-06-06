@@ -1,0 +1,236 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="Admin_admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <title>Paysheet</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Bootstrap Core CSS -->
+    <link href="Admintemp/css/basictable.css" rel="stylesheet" />
+<link href="Admintemp/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="Admintemp/css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="Admintemp/css/morris.css" type="text/css"/>
+<!-- Graph CSS -->
+<link href="Admintemp/css/font-awesome.css" rel="stylesheet"> 
+<!-- jQuery -->
+<script  src="Admintemp/js/jquery-2.1.4.min.js"></script>
+<!-- //jQuery -->
+<link href='"Admintemp///fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'/>
+<link href='"Admintemp///fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<!-- lined-icons -->
+<link rel="stylesheet" href="Admintemp/css/icon-font.min.css" type='text/css' />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+           <div class="page-container">
+   <!--/content-inner-->
+<div class="left-content">
+	   <div class="mother-grid-inner">
+               <!--header start here-->
+				<%--<div class="header-main">
+    
+                    <div style="background-color:black"></div>
+				
+							
+				     <div class="clearfix"> </div>	
+				</div>--%>
+<!--heder end here-->
+
+<!--grid-->
+ 	<div class="validation-system">
+ 		
+ 		<div class="validation-form">
+ 	<!---->
+  	    
+        <form>
+            
+           <%-- <div class="frmmdl">--%>
+             <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+     
+            <br />
+            <br />
+            <br />
+            <br />
+            <%--    </div>--%>
+        </form>
+    
+ 	<!---->
+ </div>
+
+</div>
+ 	<!--//grid-->
+
+<!-- script-for sticky-nav -->
+		<script>
+		$(document).ready(function() {
+			 var navoffeset=$(".header-main").offset().top;
+			 $(window).scroll(function(){
+				var scrollpos=$(window).scrollTop(); 
+				if(scrollpos >=navoffeset){
+					$(".header-main").addClass("fixed");
+				}else{
+					$(".header-main").removeClass("fixed");
+				}
+			 });
+			 
+		});
+		</script>
+		<!-- /script-for sticky-nav -->
+<!--inner block start here-->
+<div class="inner-block">
+
+</div>
+
+
+           <style>
+.ftr {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+</style>
+<!--inner block end here-->
+<!--copy rights start here-->
+<%--div class="copyrights">--%>
+    <div class="ftr">
+	 <p>© 2016 Pooled . All Rights Reserved | Design by  <a href="Admintemp/http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+        </div>
+<%--</%--div>--%>	
+<!--COPY rights end here-->
+</div>
+</div>
+  <!--//content-inner-->
+			<!--/sidebar-menu-->
+				<div class="sidebar-menu" style="font-size:22px">
+					<header class="logo1">
+						<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> 
+					</header>
+						<div style="border-top:1px ridge rgba(255, 255, 255, 0.15)"></div>
+                           <div class="menu">
+									<ul id="menu" >
+										<li><a href="AdHome.aspx"><i class="fa fa-home"></i> <span>Home</span><div class="clearfix"></div></a></li>
+<%--						                 <li><a href="Worktype.aspx"><i class="fa fa-plus-square"></i> <span>Work type</span><div class="clearfix"></div></a></li>--%>
+							
+										 <li id="menu-academico" ><a href="Feelancer.aspx"><i class="fa fa-envelope nav_icon"></i><span>Employees</span><div class="clearfix"></div></a></li>
+<%--									   <li id="menu-academico" ><a href="Client.aspx"><i class="fa fa-envelope nav_icon"></i><span>Client</span><div class="clearfix"></div></a></li>--%>
+<%--                                          <li id="menu-academico" ><a href="Work.aspx"><i class="fa fa-envelope nav_icon"></i><span>Work</span><div class="clearfix"></div></a></li>--%>
+                                       <%--   <li id="menu-academico" ><a href="AssingWork.aspx"><i class="fa fa-envelope nav_icon"></i><span>Add Vacancy</span><div class="clearfix"></div></a></li>--%>
+                                        
+                                         <%--<li><a href="View Work.aspx"><i class="fa fa-table" aria-hidden="true"></i><span>View Work</span><div class="clearfix"></div></a></li>--%>
+                                         <li><a href="LeaveApprove.aspx"><i class="fa fa-check" aria-hidden="true"></i><span>Leave Approve</span><div class="clearfix"></div></a></li>
+
+                                         <li><a href="Uploading.aspx"><i class="fa fa-upload" aria-hidden="true"></i><span>File Uploading</span><div class="clearfix"></div></a></li>
+                                          <li><a href="RequestFile.aspx"><i class="fa fa-send" aria-hidden="true"></i><span>File Request</span><div class="clearfix"></div></a></li>
+
+
+                                        
+									 <li id="menu-academico" ><a href="Admintemp/#"><i class="fa fa-cogs" aria-hidden="true"></i><span>Work</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
+										   <ul id="menu-academico-sub" >
+										   <li id="menu-academico-avaliacoes" ><a href="Work.aspx">Add Work</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="View Work.aspx">View Work</a></li>
+                                            <li id="menu-academico-avaliacoes" ><a href="AssingWork.aspx">Assing Work</a></li>
+										  
+                                             <li id="menu-academico-avaliacoes" ><a href="completedwork.aspx">Complted Work</a></li>
+                                           </ul>
+										</li>
+
+
+
+                                   
+									  <li id="menu-academico" ><a href="Admintemp/#"><i class="fa fa-user" aria-hidden="true"></i><span>Job Seekers</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
+										   <ul id="menu-academico-sub" >
+										   <li id="menu-academico-avaliacoes" ><a href="addvacancy.aspx">Add Vacancy</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="Viewjobappilications.aspx">Appilications</a></li>
+                                            <li id="menu-academico-avaliacoes" ><a href="selectedappilications .aspx">Selected Appilications</a></li>
+										  </ul>
+										</li>
+                                        
+                                          <li><a href="../sitemaster/Home.aspx"><i class="fa fa-power-off" aria-hidden="true"></i><span>LogOut</span><div class="clearfix"></div></a></li>
+                                        
+                                       <%-- <li id="menu-academico" ><a href="Admintemp/charts.html"><i class="fa fa-bar-chart"></i><span>Charts</span><div class="clearfix"></div></a></li>
+									 <li id="menu-academico" ><a href="Admintemp/#"><i class="fa fa-list-ul" aria-hidden="true"></i><span> Short Codes</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
+										   <ul id="menu-academico-sub" >
+										   <li id="menu-academico-avaliacoes" ><a href="Admintemp/icons.html">Icons</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="Admintemp/typography.html">Typography</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="Admintemp/faq.html">Faq</a></li>
+										  </ul>
+										</li>
+									<li id="menu-academico" ><a href="Admintemp/errorpage.html"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i><span>Error Page</span><div class="clearfix"></div></a></li>
+									  <li id="menu-academico" ><a href="Admintemp/#"><i class="fa fa-cogs" aria-hidden="true"></i><span> UI Components</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
+										   <ul id="menu-academico-sub" >
+										   <li id="menu-academico-avaliacoes" ><a href="Admintemp/button.html">Buttons</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="Admintemp/grid.html">Grids</a></li>
+										  </ul>
+										</li>
+									 <li><a href="Admintemp/tabels.html"><i class="fa fa-table"></i>  <span>Tables</span><div class="clearfix"></div></a></li>
+									<li><a href="Admintemp/maps.html"><i class="fa fa-map-marker" aria-hidden="true"></i>  <span>Maps</span><div class="clearfix"></div></a></li>
+							        <li id="menu-academico" ><a href="Admintemp/#"><i class="fa fa-file-text-o"></i>  <span>Pages</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
+										 <ul id="menu-academico-sub" >
+											<li id="menu-academico-boletim" ><a href="Admintemp/calendar.html">Calendar</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="Admintemp/signin.html">Sign In</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="Admintemp/signup.html">Sign Up</a></li>
+											
+
+										  </ul>
+									 </li>
+									<li><a href="Admintemp/#"><i class="fa fa-check-square-o nav_icon"></i><span>Forms</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
+									  <ul>
+										<li><a href="Admintemp/input.html"> Input</a></li>
+										<li><a href="Admintemp/validation.html">Validation</a></li>
+									</ul>
+									</li>--%>
+								  </ul>
+								</div>
+							  </div>
+							  <div class="clearfix"></div>		
+							</div>
+							<script>
+							var toggle = true;
+										
+							$(".sidebar-icon").click(function() {                
+							  if (toggle)
+							  {
+								$(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+								$("#menu span").css({"position":"absolute"});
+							  }
+							  else
+							  {
+								$(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+								setTimeout(function() {
+								  $("#menu span").css({"position":"relative"});
+								}, 400);
+							  }
+											
+											toggle = !toggle;
+										});
+							</script>
+<!--js -->
+<script  src="Admintemp/js/jquery.nicescroll.js"></script>
+<script  src="Admintemp/js/scripts.js"></script>
+<!-- Bootstrap Core JavaScript -->
+        <script  src="Admintemp/js/bootstrap.min.js"></script>
+       
+   <script  src="Admintemp/js/bootstrap.min.js"></script>
+   <!-- /Bootstrap Core JavaScript -->	   
+       <%-- <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>--%>
+    </div>
+    </form>
+</body>
+</html>
